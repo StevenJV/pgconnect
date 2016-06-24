@@ -35,8 +35,6 @@ MolesAssemblies
 imageStore
 _gsdata_
 *.config
-![Aa]pp.config
-![Ww]eb.config
 !repositories.config
 !packages.config
 !*.example.config
