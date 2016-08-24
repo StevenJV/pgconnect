@@ -15,7 +15,7 @@ namespace pgconnect
       //  Console.WriteLine(film.Title);
       //}
       Console.WriteLine("---");
-      var actors = db.Execute<Actor>("select * from actorswithlastname('Pitt')");
+      var actors = db.Execute<Actor>("select actor_id, first_name, last_name from actorswithlastname('Pitt')");
       foreach (var actor in actors)
       {
         Console.WriteLine("{0} {1} {2}",actor.actor_id.ToString(),actor.first_name,actor.last_name);
